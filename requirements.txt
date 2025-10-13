@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+pinecone
+openai
+python-dotenv
+firebase-admin
+requests
