@@ -94,9 +94,8 @@ def startup_event():
                 dimension=EMBEDDING_DIMENSION,
                 metric="cosine",
                 spec={
-                    "serverless": {
-                        "cloud": "aws",
-                        "region": PINECONE_REGION
+                    "pod": {
+                        "environment": PINECONE_REGION
                     }
                 }
             )
