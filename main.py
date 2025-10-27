@@ -112,6 +112,7 @@ def read_root():
 
 @app.post("/index-file")
 async def index_file(request: IndexRequest):
+    print("Received request to /index-file")
     if not pc or not openai_client:
         raise HTTPException(status_code=503, detail="AI clients not initialized.")
 
